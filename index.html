@@ -1,29 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WiseWear — приватный умный гардероб с AI-стилистом</title>
     <meta
       name="description"
       content="WiseWear — приложение для цифрового гардероба: добавляйте вещи по фото, подбирайте образы с учётом погоды и стиля. Анализ фото работает локально, без облачного AI и телеметрии."
-    />
-    <meta name="theme-color" content="#faf8f5" />
+    >
+    <meta name="theme-color" content="#faf8f5">
 
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="WiseWear — приватный умный гардероб" />
+    <link rel="canonical" href="https://erzkanzler2k.github.io/wisewear/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="WiseWear">
+    <meta property="og:title" content="WiseWear — приватный умный гардероб">
     <meta
       property="og:description"
       content="Добавляйте вещи по фото, подбирайте образы с учётом погоды. Всё считается на устройстве."
-    />
-    <meta property="og:image" content="./assets/img/wardrobe.png" />
-    <meta name="twitter:card" content="summary_large_image" />
+    >
+    <meta property="og:url" content="https://erzkanzler2k.github.io/wisewear/">
+    <meta property="og:image" content="https://erzkanzler2k.github.io/wisewear/assets/img/wardrobe.png">
+    <meta property="og:image:alt" content="Экран цифрового гардероба WiseWear">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="WiseWear — приватный умный гардероб">
+    <meta
+      name="twitter:description"
+      content="Добавляйте вещи по фото и подбирайте образы с учётом погоды. Данные остаются на устройстве."
+    >
+    <meta name="twitter:image" content="https://erzkanzler2k.github.io/wisewear/assets/img/wardrobe.png">
 
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23c4a882'/%3E%3Cpath d='M16 7l2.2 4.9 5.3.6-3.9 3.6 1 5.2-4.6-2.6-4.6 2.6 1-5.2-3.9-3.6 5.3-.6z' fill='%23fff'/%3E%3C/svg%3E" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23c4a882'/%3E%3Cpath d='M16 7l2.2 4.9 5.3.6-3.9 3.6 1 5.2-4.6-2.6-4.6 2.6 1-5.2-3.9-3.6 5.3-.6z' fill='%23fff'/%3E%3C/svg%3E">
+    <script>document.documentElement.classList.add('js');</script>
+    <link rel="stylesheet" href="./assets/css/style.css">
   </head>
 
   <body>
+    <a class="skip-link" href="#top">Перейти к содержимому</a>
     <!-- Шапка -->
     <header class="header" id="header">
       <div class="wrap header__inner">
@@ -36,7 +49,7 @@
           WiseWear
         </a>
 
-        <nav class="nav" id="nav">
+        <nav class="nav" id="nav" aria-label="Основная навигация">
           <a href="#features">Возможности</a>
           <a href="#screens">Экраны</a>
           <a href="#how">Как это работает</a>
@@ -45,12 +58,21 @@
 
         <div class="header__cta">
           <a class="btn btn-primary" href="#get">Хочу попробовать</a>
-          <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span></button>
+          <button
+            class="burger"
+            id="burger"
+            type="button"
+            aria-label="Открыть меню"
+            aria-controls="nav"
+            aria-expanded="false"
+          >
+            <span aria-hidden="true"></span>
+          </button>
         </div>
       </div>
     </header>
 
-    <main id="top">
+    <main id="top" tabindex="-1">
       <!-- Hero -->
       <section class="hero">
         <div class="wrap hero__grid">
@@ -67,7 +89,7 @@
             </div>
             <p class="hero__note">
               <span class="dot" aria-hidden="true"></span>
-              <span>Android&nbsp;и&nbsp;Web · <b>без облачного AI</b> · данные на устройстве</span>
+              <span>Android&nbsp;7+ · <b>без облачного AI</b> · данные на устройстве</span>
             </p>
           </div>
 
@@ -75,7 +97,7 @@
             <div class="phone">
               <div class="phone__glow" aria-hidden="true"></div>
               <div class="phone__screen">
-                <img src="./assets/img/home.png" alt="Главный экран WiseWear: погода, статистика и последние вещи" width="780" height="1688" />
+                <img src="./assets/img/home.png" alt="Главный экран WiseWear: погода, статистика и последние вещи" width="780" height="1688" fetchpriority="high">
               </div>
             </div>
             <div class="chip chip--a">
@@ -108,7 +130,7 @@
             </div>
             <div class="trust__item">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3" /><path d="M11 18h2" /></svg>
-              <span>Web и Android</span>
+              <span>Готово для Android</span>
             </div>
           </div>
         </div>
@@ -173,25 +195,25 @@
           </div>
 
           <div class="showcase">
-            <figure class="shot reveal" style="margin: 0">
+            <figure class="shot reveal">
               <div class="shot__phone">
-                <img src="./assets/img/wardrobe.png" alt="Гардероб WiseWear: сетка вещей с фильтрами по категории, полу и сезону" width="516" height="1116" loading="lazy" />
+                <img src="./assets/img/wardrobe.png" alt="Гардероб WiseWear: сетка вещей с фильтрами по категории, полу и сезону" width="516" height="1116" loading="lazy">
               </div>
               <h4>Гардероб</h4>
               <p>Сетка вещей, фильтры в одну строку, избранное и быстрый переход к деталям.</p>
             </figure>
 
-            <figure class="shot reveal" style="margin: 0">
+            <figure class="shot reveal">
               <div class="shot__phone">
-                <img src="./assets/img/add-item-step2.png" alt="Мастер добавления: AI подставил название вещи, выбраны пол, группа и тип" width="516" height="1116" loading="lazy" />
+                <img src="./assets/img/add-item-step2.png" alt="Мастер добавления: AI подставил название вещи, выбраны пол, группа и тип" width="516" height="1116" loading="lazy">
               </div>
               <h4>Мастер добавления</h4>
               <p>Фото, характеристики, стиль и проверка. Название и категория — из локального анализа.</p>
             </figure>
 
-            <figure class="shot reveal" style="margin: 0">
+            <figure class="shot reveal">
               <div class="shot__phone">
-                <img src="./assets/img/item-detail.png" alt="Карточка вещи: категория, подкатегория, стиль, ткань, узор и сезон" width="516" height="1116" loading="lazy" />
+                <img src="./assets/img/item-detail.png" alt="Карточка вещи: категория, подкатегория, стиль, ткань, узор и сезон" width="516" height="1116" loading="lazy">
               </div>
               <h4>Карточка вещи</h4>
               <p>Все характеристики на одном экране, любую из них можно изменить по месту.</p>
@@ -266,17 +288,31 @@
       <!-- CTA -->
       <section class="cta" id="get">
         <div class="wrap">
-          <span class="eyebrow" style="justify-content: center">Ранний доступ</span>
+          <span class="eyebrow">Релиз v0.6.0</span>
           <h2>Соберите гардероб, который действительно надеваете</h2>
           <p>
-            Приложение пока в закрытом тестировании. Напишите нам — вышлем ссылку на сборку и попросим
-            пару слов о том, чего не хватает.
+            Установите Android-сборку WiseWear, добавьте первые вещи по фото и попробуйте локального
+            AI-стилиста. Новые версии можно получать прямо из приложения.
           </p>
           <div class="cta__actions">
-            <a class="btn btn-primary btn-lg" href="mailto:hello@wisewear.app?subject=WiseWear%20—%20хочу%20попробовать">Написать нам</a>
-            <a class="btn btn-ghost btn-lg" href="https://github.com/Erzkanzler2k/wardrobe-app/releases" rel="noopener">Релизы на GitHub</a>
+            <a
+              class="btn btn-primary btn-lg"
+              href="https://github.com/Erzkanzler2k/wisewear/releases/download/v0.6.0/app-release.apk"
+            >
+              Скачать APK v0.6.0
+            </a>
+            <a
+              class="btn btn-ghost btn-lg"
+              href="https://github.com/Erzkanzler2k/wisewear/releases/tag/v0.6.0"
+              rel="noopener"
+            >
+              Все релизы
+            </a>
           </div>
-          <p class="cta__meta">Android&nbsp;7+ · APK ~10&nbsp;МБ · обновление приходит внутри приложения</p>
+          <p class="cta__meta">
+            Android&nbsp;7+ · 9,3&nbsp;МБ · SHA-256:
+            <code>1be7e9dfb2b0c9c2288fcb8c8ff7a9bb1fe4817d0fc327fc76c87cba9fd91d60</code>
+          </p>
         </div>
       </section>
     </main>
@@ -291,6 +327,10 @@
           </span>
           WiseWear
         </a>
+        <div class="footer__links">
+          <a href="mailto:hello@wisewear.app">Поддержка</a>
+          <a href="https://github.com/Erzkanzler2k/wisewear/releases" rel="noopener">Релизы</a>
+        </div>
         <small>© 2026 WiseWear · Приватный цифровой гардероб</small>
       </div>
     </footer>
