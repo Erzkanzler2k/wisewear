@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WiseWear — приватный умный гардероб с AI-стилистом</title>
+    <meta
+      name="description"
+      content="WiseWear — приложение для цифрового гардероба: добавляйте вещи по фото, подбирайте образы с учётом погоды и стиля. Анализ фото работает локально, без облачного AI и телеметрии."
+    />
+    <meta name="theme-color" content="#faf8f5" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="WiseWear — приватный умный гардероб" />
+    <meta
+      property="og:description"
+      content="Добавляйте вещи по фото, подбирайте образы с учётом погоды. Всё считается на устройстве."
+    />
+    <meta property="og:image" content="./assets/img/wardrobe.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23c4a882'/%3E%3Cpath d='M16 7l2.2 4.9 5.3.6-3.9 3.6 1 5.2-4.6-2.6-4.6 2.6 1-5.2-3.9-3.6 5.3-.6z' fill='%23fff'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Шапка -->
+    <header class="header" id="header">
+      <div class="wrap header__inner">
+        <a class="brand" href="#top">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round">
+              <path d="M12 3l1.9 4.2 4.6.5-3.4 3.1.9 4.5L12 13.1 8 15.3l.9-4.5L5.5 7.7l4.6-.5z" />
+            </svg>
+          </span>
+          WiseWear
+        </a>
+
+        <nav class="nav" id="nav">
+          <a href="#features">Возможности</a>
+          <a href="#screens">Экраны</a>
+          <a href="#how">Как это работает</a>
+          <a href="#privacy">Приватность</a>
+        </nav>
+
+        <div class="header__cta">
+          <a class="btn btn-primary" href="#get">Хочу попробовать</a>
+          <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span></button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="wrap hero__grid">
+          <div>
+            <span class="eyebrow">Приватный цифровой гардероб</span>
+            <h1>Ваш гардероб, <em>собранный</em> автоматически.</h1>
+            <p class="hero__lead">
+              Сфотографируйте вещь — приложение снимет фон, определит цвет и категорию, а затем подберёт
+              образ на сегодня с учётом погоды, стиля и сезона.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn-primary btn-lg" href="#get">Хочу попробовать</a>
+              <a class="btn btn-ghost btn-lg" href="#screens">Посмотреть экраны</a>
+            </div>
+            <p class="hero__note">
+              <span class="dot" aria-hidden="true"></span>
+              <span>Android&nbsp;и&nbsp;Web · <b>без облачного AI</b> · данные на устройстве</span>
+            </p>
+          </div>
+
+          <div class="hero__stage">
+            <div class="phone">
+              <div class="phone__glow" aria-hidden="true"></div>
+              <div class="phone__screen">
+                <img src="./assets/img/home.png" alt="Главный экран WiseWear: погода, статистика и последние вещи" width="780" height="1688" />
+              </div>
+            </div>
+            <div class="chip chip--a">
+              <span class="dot" aria-hidden="true"></span>
+              <span>Анализ фото<small>полностью на устройстве</small></span>
+            </div>
+            <div class="chip chip--b">
+              <span class="dot" aria-hidden="true"></span>
+              <span>Образ дня<small>с учётом погоды</small></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Полоса доверия -->
+      <section class="trust">
+        <div class="wrap">
+          <div class="trust__row">
+            <div class="trust__item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2" /><path d="M8 10V7a4 4 0 118 0v3" /></svg>
+              <span>Никакой телеметрии</span>
+            </div>
+            <div class="trust__item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 4v5c0 4.5-3 8-7 9-4-1-7-4.5-7-9V7z" /><path d="M9 12l2 2 4-4" /></svg>
+              <span>Offline-first</span>
+            </div>
+            <div class="trust__item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h7" /><circle cx="18" cy="17" r="3" /></svg>
+              <span>Локальный AI-анализ</span>
+            </div>
+            <div class="trust__item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3" /><path d="M11 18h2" /></svg>
+              <span>Web и Android</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Возможности -->
+      <section class="section" id="features">
+        <div class="wrap">
+          <div class="section__head reveal">
+            <span class="eyebrow">Возможности</span>
+            <h2>Всё, что нужно, чтобы носить вещи, а не хранить их</h2>
+            <p>Приложение не просто хранит фотографии — оно превращает их в понятную одежду, из которой можно составлять образы.</p>
+          </div>
+
+          <div class="features">
+            <article class="feature reveal">
+              <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5A2.5 2.5 0 015.5 6h13A2.5 2.5 0 0121 8.5v8A2.5 2.5 0 0118.5 19h-13A2.5 2.5 0 013 16.5z" /><circle cx="12" cy="12.5" r="3.2" /></svg></div>
+              <h3>Добавление по фото</h3>
+              <p>Мастер из четырёх шагов: снимок или галерея, удаление фона, характеристики, стиль. Название и категория подставляются автоматически — вы проверяете и правите.</p>
+            </article>
+
+            <article class="feature reveal">
+              <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 4.2 4.6.5-3.4 3.1.9 4.5L12 13.1 8 15.3l.9-4.5L5.5 7.7l4.6-.5z" /></svg></div>
+              <h3>AI-стилист</h3>
+              <p>Образы собираются по двенадцати факторам: цветовая гармония, стиль, сезон, ткань, фасон, узоры, формальность, бренд и погода.</p>
+            </article>
+
+            <article class="feature reveal">
+              <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8a5 5 0 10-10 0c0 5-2 6-2 6h14s-2-1-2-6" /><path d="M10 18a2 2 0 004 0" /></svg></div>
+              <h3>Погода и геолокация</h3>
+              <p>Образ дня учитывает температуру и осадки в вашем городе: в дождь подберёт практичнее, в жару — легче.</p>
+            </article>
+
+            <article class="feature reveal">
+              <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16l-6 7v6l-4 2v-8z" /></svg></div>
+              <h3>Фильтры и избранное</h3>
+              <p>Гардероб фильтруется по категории, полу, сезону и сортировке. Любимые вещи отмечаются в один тап и не теряются в общем списке.</p>
+            </article>
+
+            <article class="feature reveal">
+              <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16a8 8 0 1116 0" /><path d="M12 16l4-4" /></svg></div>
+              <h3>Черновик не теряется</h3>
+              <p>Если бросить мастер на полпути, черновик сохранится вместе с фото — вернётесь и продолжите с того же шага.</p>
+            </article>
+
+            <article class="feature reveal">
+              <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12" /><path d="M7.5 10.5L12 15l4.5-4.5" /><path d="M4 20h16" /></svg></div>
+              <h3>Обновление из приложения</h3>
+              <p>Новая версия приходит прямо в профиль: приложение само проверяет релиз, показывает список изменений и открывает установщик Android.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Экраны -->
+      <section class="section section--alt" id="screens">
+        <div class="wrap">
+          <div class="section__head section__head--center reveal">
+            <span class="eyebrow">Интерфейс</span>
+            <h2>Спокойный интерфейс без лишнего</h2>
+            <p>Никаких баннеров и рекламы: тёплая палитра, крупные зоны нажатия и понятная иерархия.</p>
+          </div>
+
+          <div class="showcase">
+            <figure class="shot reveal" style="margin: 0">
+              <div class="shot__phone">
+                <img src="./assets/img/wardrobe.png" alt="Гардероб WiseWear: сетка вещей с фильтрами по категории, полу и сезону" width="516" height="1116" loading="lazy" />
+              </div>
+              <h4>Гардероб</h4>
+              <p>Сетка вещей, фильтры в одну строку, избранное и быстрый переход к деталям.</p>
+            </figure>
+
+            <figure class="shot reveal" style="margin: 0">
+              <div class="shot__phone">
+                <img src="./assets/img/add-item-step2.png" alt="Мастер добавления: AI подставил название вещи, выбраны пол, группа и тип" width="516" height="1116" loading="lazy" />
+              </div>
+              <h4>Мастер добавления</h4>
+              <p>Фото, характеристики, стиль и проверка. Название и категория — из локального анализа.</p>
+            </figure>
+
+            <figure class="shot reveal" style="margin: 0">
+              <div class="shot__phone">
+                <img src="./assets/img/item-detail.png" alt="Карточка вещи: категория, подкатегория, стиль, ткань, узор и сезон" width="516" height="1116" loading="lazy" />
+              </div>
+              <h4>Карточка вещи</h4>
+              <p>Все характеристики на одном экране, любую из них можно изменить по месту.</p>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Как работает -->
+      <section class="section" id="how">
+        <div class="wrap">
+          <div class="section__head reveal">
+            <span class="eyebrow">Как это работает</span>
+            <h2>От фотографии до образа — четыре шага</h2>
+          </div>
+          <div class="steps">
+            <div class="step reveal">
+              <h4>Снимите вещь</h4>
+              <p>Камера или галерея. Можно перетащить файл прямо в окно на компьютере.</p>
+            </div>
+            <div class="step reveal">
+              <h4>Проверьте анализ</h4>
+              <p>Приложение снимет фон и предложит название, цвет, категорию и сезон.</p>
+            </div>
+            <div class="step reveal">
+              <h4>Отметьте стиль</h4>
+              <p>Стиль, повод и настроение — или оставьте то, что предложил AI.</p>
+            </div>
+            <div class="step reveal">
+              <h4>Получите образ</h4>
+              <p>Стилист собирает комплекты под погоду, сезон и настроение на сегодня.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Приватность -->
+      <section class="section" id="privacy">
+        <div class="wrap">
+          <div class="privacy reveal">
+            <div>
+              <span class="eyebrow">Приватность</span>
+              <h2>Ваш гардероб не уходит в облако</h2>
+              <p>
+                Анализ фотографий выполняется на устройстве: удаление фона и определение цвета работают
+                локально. Мы не отправляем ни фото, ни списки вещей сторонним AI-сервисам и не собираем
+                статистику использования.
+              </p>
+            </div>
+            <ul class="privacy__list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5" /></svg>
+                <span>Нет Sentry, Crashlytics и прочих систем сбора данных</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5" /></svg>
+                <span>Облачная синхронизация — по желанию, не обязательна</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5" /></svg>
+                <span>Фото хранятся в IndexedDB на устройстве</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5" /></svg>
+                <span>Приложение полностью работает без интернета</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta" id="get">
+        <div class="wrap">
+          <span class="eyebrow" style="justify-content: center">Ранний доступ</span>
+          <h2>Соберите гардероб, который действительно надеваете</h2>
+          <p>
+            Приложение пока в закрытом тестировании. Напишите нам — вышлем ссылку на сборку и попросим
+            пару слов о том, чего не хватает.
+          </p>
+          <div class="cta__actions">
+            <a class="btn btn-primary btn-lg" href="mailto:hello@wisewear.app?subject=WiseWear%20—%20хочу%20попробовать">Написать нам</a>
+            <a class="btn btn-ghost btn-lg" href="https://github.com/Erzkanzler2k/wardrobe-app/releases" rel="noopener">Релизы на GitHub</a>
+          </div>
+          <p class="cta__meta">Android&nbsp;7+ · APK ~10&nbsp;МБ · обновление приходит внутри приложения</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer__inner">
+        <a class="brand" href="#top">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round">
+              <path d="M12 3l1.9 4.2 4.6.5-3.4 3.1.9 4.5L12 13.1 8 15.3l.9-4.5L5.5 7.7l4.6-.5z" />
+            </svg>
+          </span>
+          WiseWear
+        </a>
+        <small>© 2026 WiseWear · Приватный цифровой гардероб</small>
+      </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
