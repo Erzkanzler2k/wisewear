@@ -924,11 +924,9 @@ p {
   .phone {
     width: 244px;
   }
-  .chip--a {
-    left: 0;
-  }
-  .chip--b {
-    right: 0;
+  /* На узком экране плашки наезжали бы на телефон и закрывали интерфейс. */
+  .chip {
+    display: none;
   }
   .chip {
     font-size: 11.5px;
